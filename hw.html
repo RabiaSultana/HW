@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW</title>
+    <link rel="stylesheet" type="text/css" href="hw.css">
+       <script src="hw.js"></script>
+</head>
+<body>
+    <div class="main-layout">
+        <div class="header">HW by Rabia Sultana</div>
+        <div class="menu"> Menu</div>
+        <div class="content">
+            <div class="main-content">
+
+                   <script>
+                      var a = 0;
+                      var size = data.length;
+                      while(a<size){
+                        document.write(`<div class="each-product">
+                        <h1>${data[a]['title']['rendered']}</h1>
+                        <img src="${data[a]['_embedded']['wp:featuredmedia'][0]['source_url']}" alt="">
+                        <h1>${data[a]['excerpt']['rendered']}</h1>
+                        
+                    </div>`);
+                        a++;
+                      }
+                   </script>
+
+                   
+
+
+
+            </div>
+            <div class="sidebar">Sidebar</div>
+        </div>
+        <div class="footer">Copyright @ Rabia Sultana 2021-2022</div>
+    </div>
+</body>
+</html>
